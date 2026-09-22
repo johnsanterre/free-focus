@@ -11349,3 +11349,33 @@ header.masthead h1, header.masthead .h1 {
   background: var(light);
   color: #0E76A8;
 }
+/* Team avatars: one size for every card, centred in its column. */
+.single-team img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  max-width: 100%;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+}
+
+.single-team h3 {
+  text-align: center;
+}
+
+.single-team p {
+  text-align: center;
+}
+
+/* The social list is a <ul>, so its default left padding pushed the icons
+   off centre even inside a text-center column. */
+.our-team .social,
+.our.team .social,
+.social {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+}
